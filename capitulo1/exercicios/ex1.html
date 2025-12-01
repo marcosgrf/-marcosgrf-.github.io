@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Exercício 1 - Tabelas</title>
+  <style>
+    body{font-family: "Times New Roman", Times, serif; margin:24px}
+    table{border-collapse:collapse; border:2px solid #333; margin-top:8px}
+    th, td{border:1px solid #666; padding:6px; text-align:left}
+    caption{font-weight:normal; padding-bottom:6px; text-align:left}
+    #tabela-coluna th {text-align:center}
+    #tabela-legenda .moeda {text-align:right}
+  </style>
+</head>
+<body>
+
+  <h1>Tabelas</h1>
+
+  <h2>Célula com 2 colunas:</h2>
+  <table id="tabela-coluna">
+    <tr>
+      <th>Nome</th>
+      <th colspan="2">Telefone</th>
+    </tr>
+    <tr>
+      <td>José das Colves</td>
+      <td>(22) 2728-6677</td>
+      <td>(22) 2728-7766</td>
+    </tr>
+  </table>
+
+  <h2>Célula com 2 linhas:</h2>
+  <table id="tabela-linha">
+    <tr>
+      <td>Nome:</td>
+      <td>José das Colves</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Telefone:</td>
+      <td>(22) 2728-6677</td>
+    </tr>
+    <tr>
+      <td>(22) 2728-7766</td>
+    </tr>
+  </table>
+
+  <h2>Tabela com Legenda</h2>
+  <table id="tabela-legenda">
+    <caption>Total de despesas por mês</caption>
+    <tr>
+      <th>Mês</th>
+      <th>Total</th>
+    </tr>
+    <tr>
+      <td>Janeiro</td>
+      <td class="moeda">R$ 1.500,00</td>
+    </tr>
+    <tr>
+      <td>Fevereiro</td>
+      <td class="moeda">R$ 1.470,00</td>
+    </tr>
+  </table>
+
+  <p><a href="../../sumario.html">&larr; Retornar ao Sumário</a></p>
+
+</body>
+</html>
